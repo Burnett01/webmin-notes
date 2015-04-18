@@ -1,0 +1,26 @@
+index_status=Display status
+index_style=Style
+index_title=Note Title
+index_content=Note Content
+index_none=No notes have been created yet.
+index_add=Add a new note.
+index_return=note list
+
+title_create=Create note
+title_edit=Edit note
+
+edit_header=Note details
+edit_status=Display
+edit_style=Style
+edit_title=Title
+edit_content=Content
+
+save_err=Failed to save note
+save_estyle=Missing or invalid 'style'
+save_etitle=Missing or invalid 'title'
+save_econtent=Missing or invalid 'content'
+save_egone=Note no longer exists
+
+log_create=Created note $1
+log_modify=Modified note $1
+log_delete=Deleted note $1
