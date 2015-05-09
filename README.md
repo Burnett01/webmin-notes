@@ -34,7 +34,7 @@ foreach my $n (@notes) {
 
 ###Example:###
 ```perl
-#This example fits Winfuture's Bootstrap theme (http://theme.winfuture.it/)
+#This example fits @winfuture Bootstrap theme (http://theme.winfuture.it/)
 
 &foreign_require("webmin-notes");
 @notes = &webmin_notes::list_notes();
