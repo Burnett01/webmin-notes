@@ -44,3 +44,7 @@ foreach my $n (@notes) {
 	}
 }
 ```
+
+###Install:###
+
+http://www.webmin.com/cgi-bin/search_third.cgi?search=Webmin-Notes
