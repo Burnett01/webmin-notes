@@ -5,6 +5,7 @@ ui_print_header(undef, $module_info{'desc'}, "", undef, 1, 1);
 
 my @notes = list_notes();
 my @table = ( );
+
 foreach my $s (@notes) {
 	push(@table, [ 
 		($s->{'status'} == 1) ? '<span class="label label-success">Enabled</span>' : '<span class="label label-danger">Disabled',

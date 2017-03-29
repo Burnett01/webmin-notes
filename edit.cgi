@@ -26,7 +26,15 @@ print ui_table_row($text{'edit_status'},
 	ui_yesno_radio('status', $note->{'status'}, 1, 0));
 
 print ui_table_row($text{'edit_style'},
-	ui_select('style', $note->{'style'}, [["success", "Success"], ["info", "Info"], ["warning", "Warning"], ["danger", "Danger"]], 1, 0));
+	ui_select('style', $note->{'style'}, 
+      [  
+         ["success", "Success"],
+         ["info", "Info"],
+         ["warning", "Warning"],
+         ["danger", "Danger"]
+      ], 1, 0
+   )
+);
 
 print ui_table_row($text{'edit_title'},
 	ui_textbox('title', $note->{'title'}, 40));
@@ -44,7 +52,7 @@ if ($in{'new'}){
 
 	print ui_form_end([ 
 		[ undef, $text{'save'}],
-	    [ 'delete', $text{'delete'} ] 
+	   [ 'delete', $text{'delete'} ] 
 	]);
 }
 

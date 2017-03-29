@@ -1,4 +1,4 @@
-##webmin-notes
+## webmin-notes
 
 A small module that allows you to create/edit/remove notes.
 
@@ -9,7 +9,7 @@ A small module that allows you to create/edit/remove notes.
 ![Image of module](http://i.imgur.com/H7GItww.png)
 
 
-###Available note-methods:###
+### Available note-methods:
 
 | Method        | Value           
 | ------------- |:-------------:
@@ -19,7 +19,7 @@ A small module that allows you to create/edit/remove notes.
 | content      	| note-content
 
 
-###Usage###
+### Usage
 Add the following in your template file (body.cgi or index.cgi):
 
 ```perl
@@ -32,7 +32,7 @@ foreach my $n (@notes) {
 ```
 
 
-###Example:###
+### Example:
 ```perl
 #This example fits @winfuture Bootstrap theme (http://theme.winfuture.it/)
 
@@ -45,6 +45,6 @@ foreach my $n (@notes) {
 }
 ```
 
-###Install:###
+### Install:
 
 http://www.webmin.com/cgi-bin/search_third.cgi?search=Webmin-Notes

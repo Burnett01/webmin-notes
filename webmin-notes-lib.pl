@@ -58,7 +58,7 @@ sub delete_note
 
 sub apply_configuration
 {
-	kill_byname_logged('HUP', 'noted');
+   kill_byname_logged('HUP', 'noted');
 }
 
 1;
