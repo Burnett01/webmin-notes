@@ -1,35 +1,15 @@
-## webmin-notes
+# webmin-notes
 
 A small module that allows you to create/edit/remove notes.
 
----
-
-#### Methods
-
-```perl
-::list_notes()
-::create_note($note)
-::modify_note($note)
-::delete_note($note)
-```
-
-#### Hashmap ($note)
-
-```perl
-
-| Key        | Value           
-| ------------- |:-------------:
-| status      	| 0 = disabled / 1 = enabled
-| style      	| warning, info, danger, success
-| title      	| note-title
-| content      	| note-content
-
-
-```
+* [General usage](#general-usage)
+* [Example usage (authentic-theme theme)](#example-usage-authentic-theme-theme)
+* [Example usage (winfuture Bootstrap theme)](#example-usage-winfuture-bootstrap-theme)
+* [API](#api)
 
 ---
 
-### General usage
+## General usage
 Add the following in your template file (body.cgi or index.cgi):
 
 ```perl
@@ -43,7 +23,7 @@ foreach my $n (@notes) {
 
 ---
 
-### Example usage (authentic-theme theme):
+## Example usage (authentic-theme theme):
 
 <img src="https://i.imgur.com/1UyqoYZ.png"/>
 
@@ -68,7 +48,7 @@ foreach my $n (@notes) {
 
 ---
 
-### Example usage (winfuture Bootstrap theme):
+## Example usage (winfuture Bootstrap theme):
 
 <img src="http://i.imgur.com/Yfa6rDI.png"/>
 
@@ -92,6 +72,35 @@ foreach my $n (@notes) {
 
 ---
 
-### Install:
+---
+
+## API
+
+### Methods
+
+```perl
+::list_notes()
+::create_note($note)
+::modify_note($note)
+::delete_note($note)
+```
+
+### Hashmap ($note)
+
+```perl
+
+| Key        | Value           
+| ------------- |:-------------:
+| status      	| 0 = disabled / 1 = enabled
+| style      	| warning, info, danger, success
+| title      	| note-title
+| content      	| note-content
+
+
+```
+
+---
+
+## Download:
 
 http://www.webmin.com/cgi-bin/search_third.cgi?search=Webmin-Notes
