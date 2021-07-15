@@ -2,9 +2,22 @@
 
 A small module that allows you to create/edit/remove notes.
 
-### Available note-methods:
+---
 
-| Method        | Value           
+#### Methods
+
+```perl
+::list_notes()
+::create_note($note)
+::modify_note($note)
+::delete_note($note)
+```
+
+#### Hashmap ($note)
+
+```perl
+
+| Key        | Value           
 | ------------- |:-------------:
 | status      	| 0 = disabled / 1 = enabled
 | style      	| warning, info, danger, success
@@ -12,7 +25,11 @@ A small module that allows you to create/edit/remove notes.
 | content      	| note-content
 
 
-### Usage
+```
+
+---
+
+### General usage
 Add the following in your template file (body.cgi or index.cgi):
 
 ```perl
@@ -24,7 +41,15 @@ foreach my $n (@notes) {
 }
 ```
 
-### Example (authentic-theme theme):
+---
+
+### Example usage (authentic-theme theme):
+
+<img src="https://i.imgur.com/1UyqoYZ.png"/>
+
+<img src="https://i.imgur.com/w5JV5ql.png"/>
+
+<img src="https://i.imgur.com/TAImqi1.png"/>
 
 This example fits authentic-theme (https://github.com/virtualmin/authentic-theme).
 
@@ -43,13 +68,13 @@ foreach my $n (@notes) {
 
 ---
 
-### Example (winfuture Bootstrap theme):
+### Example usage (winfuture Bootstrap theme):
 
-![Image of module](http://i.imgur.com/Yfa6rDI.png)
+<img src="http://i.imgur.com/Yfa6rDI.png"/>
 
-![Image of module](http://i.imgur.com/R1pTHFp.png)
+<img src="http://i.imgur.com/R1pTHFp.png"/>
 
-![Image of module](http://i.imgur.com/H7GItww.png)
+<img src="http://i.imgur.com/H7GItww.png"/>
 
 This example fits @winfuture Bootstrap theme (http://theme.winfuture.it/).
 
